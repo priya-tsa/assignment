@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title> Admin Dashboard</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/bundles/izitoast/css/jquery.toast.min.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"><i
+                  class="fas fa-bars"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i class="fas fa-expand"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Messages
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">John Deo</span>
+                    <span class="time messege-text">Please check your mail !!</span>
+                    <span class="time text-primary">2 Min Ago</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">Sarah Smith</span>
+                    <span class="time messege-text">Request for leave application</span>
+                    <span class="time text-primary">5 Min Ago</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">Jacob Ryan</span>
+                    <span class="time messege-text">Your payment invoice is generated.</span>
+                    <span class="time text-primary">12 Min Ago</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">Lina Smith</span>
+                    <span class="time messege-text">hii John, I have upload doc related to task.</span>
+                    <span class="time text-primary">30 Min Ago</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">Jalpa Joshi</span>
+                    <span class="time messege-text">Please do as specify. Let me know if you have any query.</span>
+                    <span class="time text-primary">1 Days Ago</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span>
+                  <span class="dropdown-item-desc">
+                    <span class="message-user">Sarah Smith</span>
+                    <span class="time messege-text">Client Requirements</span>
+                    <span class="time text-primary">2 Days Ago</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/user.png" class="user-img-radious-style">
+              <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">
+              <img alt="image" src="assets/img/logo.png" class="header-logo" />
+              <span class="logo-name">ADMIN</span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Main</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
+
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-broom"></i><span>Widgets</span></a>
+
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fab fa-accusoft"></i><span>Apps</span></a>
+
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i class="far fa-envelope"></i><span>Email</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
+                <li class="active"><a class="nav-link" href="email-compose.html">Compose</a></li>
+                <li><a class="nav-link" href="email-read.html">read</a></li>
+              </ul>
+            </li>
+            <li class="menu-header">UI Elements</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase"></i><span>Basic
+                  Components</span></a>
+
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-qrcode"></i><span>Advanced</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Compose</h1>
+          </div>
+          <div class="section-body">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="body">
+                    <div id="mail-nav">
+                      <button type="button" class="btn btn-danger waves-effect btn-compose m-b-15">COMPOSE MAIL</button>
+                      <ul class="" id="mail-folders">
+                        <li>
+                          <a href="email-inbox.html" title="Inbox">Inbox
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Sent">Sent</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Draft">Draft</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Bin">Bin</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Important">Important</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Starred">Starred</a>
+                        </li>
+                      </ul>
+                      <h5 class="b-b p-10 text-strong">Labels</h5>
+                      <ul class="" id="mail-labels">
+                        <li>
+                          <a href="javascript:;">
+                            <i class="material-icons col-red">local_offer</i>Family</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">
+                            <i class="material-icons col-blue">local_offer</i>Work</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">
+                            <i class="material-icons col-orange">local_offer</i>Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">
+                            <i class="material-icons col-cyan">local_offer</i>Themeforest</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">
+                            <i class="material-icons col-blue-grey">local_offer</i>Google</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <div class="card">
+                  <div class="boxs mail_listing">
+                    <div class="inbox-center table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th colspan="1">
+                              <div class="inbox-header">
+                                Compose New Message
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form class="composeForm">
+                          <div class="form-group">
+                            <div class="form-line">
+                              <input type="text" id="email_address" class="form-control" placeholder="TO">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-line">
+                              <input type="text" id="subject" class="form-control" placeholder="Subject">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-line">
+                              <input type="text" id="cc" class="form-control" placeholder="CC">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-line">
+                              <textarea type="text" id="body" class="form-control" placeholder="Body"></textarea>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="m-l-25 m-b-20">
+                          <button type="button" class="btn btn-info btn-border-radius waves-effect"
+                            id="sendMail">Send</button>
+                          <!-- <button type="button" class="btn btn-danger btn-border-radius waves-effect">Discard</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="#">XYZ</a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/ckeditor/ckeditor.js"></script>
+  <!-- Page Specific JS File -->
+  <!-- <script src="assets/js/page/ckeditor.js"></script> -->
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/bundles/izitoast/js/jquery.toast.min.js"></script>
+  <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/core/email-compose.js"></script>
+</body>
+
+
+</html>
